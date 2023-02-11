@@ -1,0 +1,27 @@
+{
+    "name": "mardira/mardira-framework",
+    "type": "framework",
+    "license": "MIT",
+    "keywords": [
+        "framework",
+        "mardira",
+        "bootcamp"
+    ],
+    "description": "Mardira Framework",
+    "authors": [
+        {
+            "name": "xietsunzao",
+            "email": "jefri@stmik-mi.ac.id"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "firebase/php-jwt": "^6.3",
+        "symfony/console": "2.6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

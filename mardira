@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+$application->add(new \App\Core\Commands\CreateControllerCommand());
+$application->add(new \App\Core\Commands\CreateModelCommand());
+$application->add(new \App\Core\Commands\CreateMigrationCommand());
+$application->add(new \App\Core\Commands\CreateSeederCommand());
+$application->add(new \App\Core\Commands\CreateDotEnvCommand());
+$application->add(new \App\Core\Commands\ServeCommand());
+$application->add(new \App\Core\Commands\RunMigrateCommand());
+$application->add(new \App\Core\Commands\RunMigrateRefreshCommand());
+$application->add(new \App\Core\Commands\RunGlobalSeederCommand());
+$application->add(new \App\Core\Commands\RunSeederCommand());
+
+
+
+$application->run();
