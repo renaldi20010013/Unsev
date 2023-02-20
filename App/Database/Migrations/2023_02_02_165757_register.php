@@ -13,6 +13,7 @@ return new class extends Migration
         Schema::create('register', function (Blueprint $table) {
             $table->increment('id_reg');
             $table->string('nama_lengkap', 50);
+            $table->string('username', 50);
             $table->integer('no_telepon',50);
             $table->string('email', 30);
             $table->string('password', 64);
