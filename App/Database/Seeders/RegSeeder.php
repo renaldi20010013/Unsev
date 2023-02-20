@@ -11,6 +11,7 @@ class RegSeeder extends Seeder
     {
         $data = [
             'nama_lengkap' => 'user',
+            'username' => 'user',
             'no_telepon' => '0891234567890',
             'email' => 'user@gmail.com',
             'password' => md5('user'),

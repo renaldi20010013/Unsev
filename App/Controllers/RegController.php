@@ -21,11 +21,11 @@ class RegController extends Controller
 
     public function create()
     {
-        $naleng = $this->input->post('nama_lengkap');
-        $data = $this->model('Reg')->findWhere(['nama_lengkap' => $naleng]);
+        $naleng = $this->input->post('username');
+        $data = $this->model('Reg')->findWhere(['username' => $naleng]);
         if ($data != null ) 
         {
-            $this->response(409,$naleng.' sudah terdaftar');
+            $this->response(409,$naleng.'Username sudah terdaftar');
             exit;
         }
         else{
